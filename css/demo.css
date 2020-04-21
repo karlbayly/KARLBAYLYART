@@ -1,0 +1,36 @@
+
+
+	.toggle { margin: 2px 0 0 14px; float: left; border-radius: 0px; 
+	
+	-moz-border-radius: 0px; 
+	-webkit-border-radius: 0px; }
+	
+	.toggle li { float: left; }
+
+	.toggle li a {width: 50px; 
+	padding: 0px 0; 
+	text-align: left; 	
+	display: block; 
+	text-shadow: 1px 1px 0 #fff; 
+	font-size: 50px; 
+	font-weight: 600; 
+	color: #ff0000; 
+	-webkit-border-radius: 0 0px 0px 0; 
+	-moz-border-radius: 0 0px 0px 0; 
+	-o-border-radius: 0 0px 0px 0; 
+	border-radius: 0 0px 0px 0; 
+
+	
+
+
+.slider { margin: 50px 0px 10px!important;}
+#carousel li {margin-right: 0px;}
+#carousel img {display: block; opacity: .0; cursor: pointer;}
+#carousel img:hover {opacity: 0;}
+#carousel .flex-active-slide img {opacity: 0; cursor: default;}
+
+
+
+
+
+

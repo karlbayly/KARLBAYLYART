@@ -1,0 +1,206 @@
+/*
+ * jQuery FlexSlider v2.7.2
+ * https://www.woocommerce.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ *
+ */
+/*=====================================================================================*/
+
+
+.flex-container a:hover,
+.flex-slider a:hover {
+  outline: none;
+}
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+}
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+.flexslider .slides img {
+  width: 600px;
+  display: block;
+}
+.flexslider .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+* html .flexslider .slides {
+  height: 1%;
+}
+.no-js .flexslider .slides > li:first-child {
+  display: block;
+}
+
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
+.flexslider {
+  margin: 0 0 0px;
+  background: ;
+ 
+  color: ;
+  padding-bottom: 0px;
+  position: relative;
+  zoom: 0;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+ 
+}
+.flexslider .slides {
+  zoom: 0;
+}
+.flexslider .slides img {
+  height: auto;
+  -moz-user-select: none;
+}
+.flex-viewport {
+  max-height: 100%;
+  -webkit-transition: all 0s ease;
+  -moz-transition: all 0s ease;
+  -ms-transition: all 0s ease;
+  -o-transition: all 0s ease;
+  transition: all 0s ease;
+}
+.loading .flex-viewport {
+  max-height: 300px;
+}
+@-moz-document url-prefix() {
+  .loading .flex-viewport {
+    max-height: none;
+  }
+}
+.carousel li {
+  margin-right: 5px;
+}
+.flex-direction-nav {
+  *height: 0;
+}
+.flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  width: 150px;
+  height: 280px;
+  margin: 0px 0 0;
+  position: absolute;
+  top: 0%;
+  z-index: 10;
+  overflow: hidden;
+  
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  color: rgb(28, 55, 208);
+	opacity: 0;
+  -webkit-transition: all 0.0s ease-in-out;
+  -moz-transition: all 0.0s ease-in-out;
+  -ms-transition: all 0.0s ease-in-out;
+  -o-transition: all 0.0s ease-in-out;
+  transition: all 0.0s ease-in-out;
+	
+	
+}
+
+
+.flex-control-nav
+{
+	display: none;
+	}
+
+.flex-direction-nav a:before {
+  font-family: "arial";
+  font-size: 10px;
+  display: inline-block;
+  
+  color: rgb(253, 0, 0);
+  opacity: 0;
+}
+
+.flex-direction-nav a.flex-next:before {
+  
+	opacity: 0;
+	
+}
+.flex-direction-nav .flex-prev {
+  left: 0px;
+	cursor: w-resize;
+	opacity: 0;
+	height: 100%;
+	width: 40%;
+	
+}
+.flex-direction-nav .flex-next {
+  	right: 0px;
+  	cursor: e-resize;
+	opacity: 0;
+	height: 100%;
+	width: 50%;
+	
+}
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: .0;
+  left: 0px;
+	
+}
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 0;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: .0;
+  right: 0px;
+}
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 0;
+}
+.flex-direction-nav .flex-disabled {
+  opacity: 0!important;
+  filter: alpha(opacity=0);
+  cursor: default;
+  z-index: -1;
+	
+}
+
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {
+    opacity:1;
+    left: 10px;
+	 border-width: 5px; 
+  }
+  .flex-direction-nav .flex-next {
+    opacity: 0;
+    right: 10px;
+  }
+}*/
